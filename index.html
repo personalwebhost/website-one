@@ -217,6 +217,24 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="https://unpkg.com/vue-typer/dist/vue-typer.min.js">
+				// ES6
+				import { VueTyper } from 'vue-typer'
+				// CommonJS
+				var VueTyper = require('vue-typer').VueTyper
+				// Global
+				var VueTyper = window.VueTyper.VueTyper
+
+				var MyComponent = {
+				  // ...
+				  components: {
+				    // ES6; property shorthand + Vue should automatically dasherize the key for us
+				    VueTyper
+				    // pre-ES6
+				    'vue-typer': VueTyper
+				  }
+				}
+			</script>
 			<script src="assets/js/main.js"></script>
 
 	</body>
