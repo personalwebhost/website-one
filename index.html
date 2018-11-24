@@ -75,9 +75,21 @@
 								<h2 class="alt">Hi! I'm <strong>Gavin</strong>, a creative, innovative<br />
 								developer with a focus on impactful work</h2>
 								<p>
-					                and I love to
-					                <code>{<span data-v-c41bac74="" class="vue-typer"><span data-v-c41bac74="" class="left"><span data-v-302772ec="" data-v-c41bac74="" class="char custom typed">b</span><span data-v-302772ec="" data-v-c41bac74="" class="char custom typed">u</span><span data-v-302772ec="" data-v-c41bac74="" class="char custom typed">i</span><span data-v-302772ec="" data-v-c41bac74="" class="char custom typed">l</span><span data-v-302772ec="" data-v-c41bac74="" class="char custom typed">d</span></span><span data-v-a16e0f02="" data-v-c41bac74="" class="caret custom vue-typer-caret-smooth idle pre-erase"></span><span data-v-c41bac74="" class="right"></span></span>}
-					                </code>
+					                and I love to {
+					                <vue-typer
+									  :text='["Eat","Sleep","Code","Laugh","Innovate"]'
+									  :repeat='Infinity'
+									  :shuffle='false'
+									  initial-action='typing'
+									  :pre-type-delay='70'
+									  :type-delay='70'
+									  :pre-erase-delay='1500'
+									  :erase-delay='70'
+									  erase-style='backspace'
+									  :erase-on-complete='false'
+									  caret-animation='phase'
+									></vue-typer>
+									}
 					            </p>
 							</header>
 
