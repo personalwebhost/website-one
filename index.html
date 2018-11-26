@@ -10,6 +10,25 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script type="text/javascript" charset="utf-8" async defer>
+				// ES6
+				import { VueTyper } from 'vue-typer'
+				// CommonJS
+				var VueTyper = require('vue-typer').VueTyper
+				// Global
+				var VueTyper = window.VueTyper.VueTyper
+
+				var MyComponent = {
+				  // ...
+				  components: {
+				    // ES6; property shorthand + Vue should automatically dasherize the key for us
+				    VueTyper
+				    // pre-ES6
+				    'vue-typer': VueTyper
+				  }
+				}
+
+		</script>
 	</head>
 	<body>
 
@@ -221,25 +240,5 @@
 			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 			<script src="https://unpkg.com/vue-typer/dist/vue-typer.min.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script type="text/javascript" charset="utf-8" async defer>
-				// ES6
-				import { VueTyper } from 'vue-typer'
-				// CommonJS
-				var VueTyper = require('vue-typer').VueTyper
-				// Global
-				var VueTyper = window.VueTyper.VueTyper
-
-				var MyComponent = {
-				  // ...
-				  components: {
-				    // ES6; property shorthand + Vue should automatically dasherize the key for us
-				    VueTyper
-				    // pre-ES6
-				    'vue-typer': VueTyper
-				  }
-				}
-
-			</script>
-
 	</body>
 </html>
